@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Week 6</title>
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+        <script defer src="app.js" type="module"></script>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <section>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Data</a></li>
+                        <li><a href="predictions.html">Predictions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2>Decision Tree</h2>
+            </div>
+            <div id="view"></div>
+            <div id="accuracy">Accuracy : - </div>
+            
+            <div>
+                <h3>Confusion Matrix</h3>
+                <table id="confusion">
+                    <tr>
+                        <td></td>
+                        <td>Predicted true</td>
+                        <td>Predicted false</td>
+                    </tr>
+                    <tr>
+                        <td>Actually true</td>
+                        <td id="truePositives"> </td>
+                        <td id="falseNegatives">  </td>
+                    </tr>
+                    <tr>
+                        <td>Actually false</td>
+                        <td id="falsePositives">  </td>
+                        <td id="trueNegatives">  </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </body>
+</html>

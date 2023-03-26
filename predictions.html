@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Predictions</title>
+        <!-- Scripts -->
+        <script defer src="fetch.js" type="module"></script>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <section>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Data</a></li>
+                        <li><a href="predictions.html">Predictions</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section>
+            <div id="div1">
+                <h1>Predictions</h1>
+            </div>
+
+            <div id="div2">
+                <form id="mushroomForm">
+                    <label for="bruises">Does the mushroom have bruises?</label>
+                    <select id="bruises">
+                        <option value="t">Yes</option>
+                        <option value="f">No</option>
+                    </select>
+                    
+                    <label for="cap-shape">What is the shape of the cap?</label>
+                    <select id="cap-shape">
+                        <option value="f">Fibrous</option>
+                        <option value="g">Groovest</option>
+                        <option value="y">Scaly</option>
+                        <option value="s">Smooth</option>
+                    </select>
+                
+                    <label for="population">What is the population of the mushroom?</label>
+                    <select id="population">
+                        <option value="c">Clustered</option>
+                        <option value="n">Numerous</option>
+                        <option value="s">Scattered</option>
+                        <option value="v">Several</option>
+                        <option value="a">Abundant</option>
+                        <option value="y">Solitary</option>
+                    </select>
+
+                    <label for="cap-color">What is the color of the cap?</label>
+                    <select id="cap-color">
+                        <option value="n">Brown</option>
+                        <option value="b">Buff</option>
+                        <option value="c">Cinnamon</option>
+                        <option value="g">Gray</option>
+                        <option value="r">Green</option>
+                        <option value="p">Pink</option>
+                        <option value="u">Purple</option>
+                        <option value="e">Red</option>
+                        <option value="w">White</option>
+                        <option value="y">Yellow</option>
+                    </select>
+                
+                    <button type="submit">Predict</button>
+                </form>
+            </div>
+
+            <div id="div3">
+                <p id="predictionResult"></p>
+            </div>
+        </section>
+    </body>
+</html>

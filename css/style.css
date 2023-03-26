@@ -1,0 +1,123 @@
+:root {
+    --clr-100: #ffffff;
+    --clr-200: #cccccc;
+    --clr-900: #1e1e1e;
+
+    --clr-font-dark: var(--clr-900);
+    --clr-font-light: var(--clr-100);
+}
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML Elements */
+body {
+    background-color: var(--clr-900);
+}
+
+div, h1, h2, h3, button, a, span, p {
+    color: var(--clr-font-light);
+    font-family: 'Exo', sans-serif;
+}
+
+h1 {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+h2 {
+    font-size: 1rem;
+}
+
+button {
+    border: 1px solid var(--clr-100);
+    border-radius: 0.1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1em;
+    background-color: transparent;
+    color: var(--clr-font-light);
+    transition: 0.2s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--clr-100);
+    color: var(--clr-font-dark);
+}
+
+nav {
+    padding-top: 1rem;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    padding: 0.5rem 1rem;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.2s;
+}
+a:hover {
+    color: var(--clr-200);
+}
+
+
+/* Global Variables */
+.d-none {
+    display: none;
+}
+
+/* Content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-box {
+    border: 1px solid var(--clr-100);
+    width: 100%;
+}
+
+body {
+    /* font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(208, 208, 208); */
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, h4 {
+    margin-top: 0;
+}
+
+div {
+    border: 1px solid var(--clr-100);
+    padding: 15px;
+    margin: 10px;
+}
+
+#chart {
+    overflow: scroll;
+    padding:20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+table, tr, td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+}
