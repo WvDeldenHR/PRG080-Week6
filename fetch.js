@@ -18,9 +18,9 @@ function modelLoaded(model) {
                     
         const resultElement = document.getElementById('predictionResult');
         if (prediction === 'e') {
-            resultElement.innerHTML = 'Prediction: It is edible!';
+            resultElement.innerHTML = 'Prediction: It is edible';
         } else {
-            resultElement.innerHTML = 'Prediction: It is poisonous!';
+            resultElement.innerHTML = 'Prediction: It is poisonous';
         }
     });
 }
